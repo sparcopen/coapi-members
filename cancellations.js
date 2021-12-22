@@ -24,13 +24,12 @@ var cancellations = function(opts) {
           var tbl = '<table width=100%><thead> \
 <th><b>Institution</b></th> \
 <th><b>Membership Level</b></th> \
-<th><b>Region</b></th> \
-<th><b>Publisher(s)</b></th> \
-<th><b>Strategic Considerations</b></th>';
+<th><b>Contact Name</b></th> \
+<th><b>Contact Email</b></th>';
           tbl += '</thead><tbody sheetid=' + this.obj.attr('sheetid') + '>';
           for ( var r in data ) {
             tbl += '<tr>';
-            var keys = ['institution', 'membershiplevel', 'firstname', 'lastname', 'email'];
+            var keys = ['institution', 'membershiplevel', 'fullname', 'email'];
             for ( var k in keys) {
               var dk = data[r][keys[k]];
               if (dk === undefined) { dk === ''; }
