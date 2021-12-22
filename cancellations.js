@@ -22,17 +22,15 @@ var cancellations = function(opts) {
         obj: $(this),
         success: function(data) {
           var tbl = '<table width=100%><thead> \
-<th><b>Institution/<br />Consortium</b></th> \
-<th><b>Date</b></th> \
-<th><b>Region</b></th> \
-<th><b>Publisher(s)</b></th> \
-<th><b>Strategic Considerations</b></th> \
-<th><b>Outcome</b></th> \
-<th><b>Estimated Annual Savings (USD)</b></th>';
+<th><b>Institution</th> \
+<th><b>Membership Level</b></th> \
+<th><b>First Name</b></th> \
+<th><b>Last Name(s)</b></th> \
+<th><b>Contact Email</b></th> \';
           tbl += '</thead><tbody sheetid=' + this.obj.attr('sheetid') + '>';
           for ( var r in data ) {
             tbl += '<tr>';
-            var keys = ['institution', 'date', 'region', 'publisher', 'considerations', 'outcome', 'savings'];
+            var keys = ['institution', 'membership_level', 'first_name', 'last_name', 'email'];
             for ( var k in keys) {
               var dk = data[r][keys[k]];
               if (dk === undefined) { dk === ''; }
