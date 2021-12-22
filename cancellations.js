@@ -30,7 +30,7 @@ var cancellations = function(opts) {
           tbl += '</thead><tbody sheetid=' + this.obj.attr('sheetid') + '>';
           for ( var r in data ) {
             tbl += '<tr>';
-            var keys = ['institution', 'membership_level', 'first_name', 'last_name', 'email'];
+            var keys = ['institution', 'membershiplevel', 'firstname', 'lastname', 'email'];
             for ( var k in keys) {
               var dk = data[r][keys[k]];
               if (dk === undefined) { dk === ''; }
