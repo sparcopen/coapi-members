@@ -41,7 +41,6 @@ loadtable.renderData = function() {
       <th><b>Institution</b></th>
       <th><b>Membership Level</b></th>
       <th><b>Contact Name</b></th>
-      <th><b>Contact Email</b></th>
     </thead>
     <tbody>`;
 
