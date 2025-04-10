@@ -1,7 +1,7 @@
 loadtable = {};
 
 loadtable.REFERRER = "https://coapi.sparcopen.org"
-loadtable.KEYS = ['institution', 'membership_level', 'full_name', 'email'];
+loadtable.KEYS = ['institution', 'membership_level', 'full_name'];
 loadtable.KEYMAP = {}
 loadtable.DATA = {}
 
